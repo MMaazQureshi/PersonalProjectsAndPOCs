@@ -7,6 +7,7 @@ namespace BeerPal.Entities
 {
     public class WebhookEvent : BaseEntity
     {
+        public int Id{ get; set; }
         public string PayPalWebHookEventId { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateReceived { get; set; }

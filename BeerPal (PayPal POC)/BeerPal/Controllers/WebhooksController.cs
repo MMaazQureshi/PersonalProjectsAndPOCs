@@ -61,6 +61,9 @@ namespace BeerPal.Controllers
                 {
                     new WebhookEventType
                     {
+                        name = "*"
+                    }, new WebhookEventType
+                    {
                         name = "PAYMENT.SALE.REFUNDED"
                     },
                     new WebhookEventType
