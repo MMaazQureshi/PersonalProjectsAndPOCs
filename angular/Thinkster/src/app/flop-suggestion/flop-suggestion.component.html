@@ -18,7 +18,7 @@
       class="form-control"
       id="flopname"
       name="flopname"
-      (ngModel)="flopname"
+      (ngModel)="model.flopname"
     />
 
     <label for="year">Year</label>
@@ -26,13 +26,13 @@
       type="text"
       class="form-control"
       name="year"
-      (ngModel)="year"
+      (ngModel)="model.year"
       id="year"
     />
 
     <label for="stars">Stars</label>
     <input type="text" class="form-control" id="stars"  name="stars"
-    (ngModel)="stars" />
+    [(ngModel)]="model.stars" />
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>

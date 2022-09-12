@@ -5,9 +5,12 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class FlopSuggestionComponent {
   suggestions:any[] = [];
-  flopname='';
-  year = '';
-  stars = '';
+  model ={
+    flopname:'',
+    year : '',
+    stars : ''
+  }
+ 
   constructor() {}
 
   ngOnInit() {}
@@ -15,5 +18,7 @@ export class FlopSuggestionComponent {
   addSuggestion(suggestion:any) {
     console.log(suggestion);
     this.suggestions.push(suggestion);
+    console.log(this.model);
+
   }
 }
