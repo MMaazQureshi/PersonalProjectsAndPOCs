@@ -8,13 +8,15 @@ import {HttpClientModule} from '@angular/common/http';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FlopListComponent } from './flop-list/flop-list.component';
+import { FlopSuggestionComponent } from './flop-suggestion/flop-suggestion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     FooterComponent,
-    FlopListComponent
+    FlopListComponent,
+    FlopSuggestionComponent
   ],
   imports: [
     BrowserModule,
