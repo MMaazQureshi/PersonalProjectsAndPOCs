@@ -25,8 +25,16 @@
       type="text"
       class="form-control"
       id="flopname"
+      #nameModel = "ngModel"
+      required
+      minlength="2"
+      maxlength="5"
     />
-
+    <span *ngIf="nameModel.invalid && nameModel.touched "></span>
+      valid: {{nameModel.valid}}
+      invalid: {{nameModel.invalid}}
+      pristine: {{nameModel.pristine}}
+      dirty: {{nameModel.dirty}}
     <label for="year">Year</label>
     <input
       name="year"
