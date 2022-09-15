@@ -9,6 +9,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FlopListComponent } from './flop-list/flop-list.component';
 import { FlopSuggestionComponent } from './flop-suggestion/flop-suggestion.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FlopSuggestionComponent } from './flop-suggestion/flop-suggestion.compo
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
